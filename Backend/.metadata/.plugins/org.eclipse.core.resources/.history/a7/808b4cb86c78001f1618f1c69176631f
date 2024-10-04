@@ -1,0 +1,6 @@
+package musica;
+
+public class CuentaService {
+	String nombre;
+	String musica;
+}

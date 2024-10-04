@@ -1,0 +1,19 @@
+package musica;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+
+public class CuentaService {
+	
+	@Autowired
+	private Cuenta cuenta;
+	@Autowired
+	private CuentaRepository cuentaRepository;
+	
+	// Encontrar una cuenta por su nombre
+    public Cuenta obtenerUsuarioPorNombre(String nombre) {
+    	return CuentaRepository.findByNombre(nombre);
+    }
+	
+}

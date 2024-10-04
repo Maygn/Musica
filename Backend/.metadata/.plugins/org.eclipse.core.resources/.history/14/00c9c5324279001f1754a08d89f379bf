@@ -1,0 +1,10 @@
+package musica;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CuentaService {
+	
+	@Autowired
+	private Cuenta cuenta;
+	
+}

@@ -1,0 +1,33 @@
+package musica;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+public class CuentaController {
+
+	@Autowired
+	private Cuenta cuenta;
+	
+	//asignar json a nuevo usuario
+	@PostMapping("/nuevo")
+	public String crearJson(String usuario) {
+		return "";
+	}
+	//recuperar json de usuario
+	@GetMapping("/verListado")
+	public String verJson(String usuario) {
+		return "";
+	}
+	//modificar json de usuario
+	@PostMapping("/modificar")
+	public String modificarJSon(String usuario) {
+		return "";
+	}
+	//borrar un usuario del todo
+	@PostMapping("/borrarUsuario")
+	
+	public String borrarUsuario(String usuario) {
+		return "";
+	}
+}

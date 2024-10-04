@@ -1,0 +1,10 @@
+package musica;
+
+import java.util.UUID;
+
+
+public interface CuentaRepository extends JpaRepository<Cuenta, UUID> {
+	  
+	//el método lo autogenera el jpa
+    Cuenta findByNombre(String nombre);
+}
